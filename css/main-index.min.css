@@ -1,0 +1,238 @@
+:root {
+  --transition: 250ms cubic-bezier(.4, 0, .2, 1);
+}
+
+.logo {
+  font-size: 24px;
+}
+
+.main {
+  padding-left: 15px;
+  padding-right: 15px;
+  color: midnightblue;
+  text-align: center;
+  background: linear-gradient(#99ccff -5%, #ccffcc 122%);
+}
+
+button {
+  border: none;
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+a:hover {
+  color: royalblue;
+  transition: var(--transition);
+}
+
+h2 {
+  font-size: 24px;
+  padding-top: 15px;
+}
+
+.header {
+  padding: 12px 15px;
+  display: flex;
+  align-items: center;
+  background-color: bisque;
+}
+
+.mobile__menubtn {
+  margin-left: auto;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  fill: black;
+}
+.mobile__menubtn:hover, .mobile__menubtn:focus .menu__svg {
+  fill: royalblue;
+  transition: var(--transition);
+}
+.mobile__menusvg {
+  width: 24px;
+  height: 24px;
+}
+.mobile__btnclose {
+  margin-left: calc(100% - 48px);
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+}
+.mobile__svgclose {
+  width: 19px;
+  height: 19px;
+  fill: black;
+}
+.mobile__svgclose:hover {
+  fill: royalblue;
+  transition: var(--transition);
+}
+.mobile__container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;
+  max-width: 768px;
+  height: 100vh;
+  padding-left: 40px;
+  padding-top: 8px;
+  background: bisque;
+  z-index: 999;
+  transform: translateX(100%);
+  transition: transform 250ms ease-in-out;
+}
+.mobile__container.is-open {
+  transform: translateX(0);
+}
+.mobile__display {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  font-size: 40px;
+  /* border: 1px solid red; */
+}
+.mobile__link {
+  margin-bottom: 50px;
+}
+.mobile__email {
+  font-size: 30px;
+}
+
+.intro__h1 {
+  margin-top: 0;
+  padding-top: 30px;
+  font-size: 26px;
+}
+.intro__p {
+  padding-left: 4%;
+  padding-right: 4%;
+  font-weight: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.03em;
+  text-align: justify;
+}
+
+.proyectos {
+  background-color: bisque;
+  padding-bottom: 15px;
+}
+.proyectos__btn {
+  margin-bottom: 13px;
+  padding: 24px;
+  width: 96%;
+  font-size: 24px;
+  color: midnightblue;
+  background: cornsilk;
+  border-radius: 4px;
+}
+.proyectos__btn:hover, .proyectos__btn:focus {
+  border: 2px solid midnightblue;
+  transition: var(--transition);
+}
+.proyectos__btn:active {
+  color: cornsilk;
+  background: midnightblue;
+  transition: var(--transition);
+}
+
+.contact {
+  font-size: 20px;
+  padding-bottom: 30px;
+  /*&__form {
+      text-align: left;
+  }*/
+}
+.contact__title {
+  margin-bottom: 0;
+}
+.contact__p {
+  margin-top: 12px;
+  margin-bottom: 12px;
+  margin-left: 2%;
+  text-align: left;
+}
+.contact__p--name {
+  margin-top: 0;
+}
+.contact__input {
+  width: 100%;
+  height: 40px;
+  padding-left: 42px;
+  border: 0;
+  border-radius: 4px;
+}
+.contact__input:hover, .contact__input:focus {
+  border: 1px solid midnightblue;
+  outline: none;
+}
+.contact__input--name {
+  background-image: url("../images/name.svg");
+  background-repeat: no-repeat;
+  background-position: 14px 12px;
+}
+.contact__input--name:hover, .contact__input--name:focus {
+  background-image: url("../images/name1.svg");
+}
+.contact__input--email {
+  background-image: url("../images/email.svg");
+  background-repeat: no-repeat;
+  background-position: 12px 12px;
+  transition: var(--transition);
+}
+.contact__input--email:hover, .contact__input--email:focus {
+  background-image: url("../images/email1.svg");
+}
+.contact__textarea {
+  padding: 12px 16px;
+  width: 100%;
+  height: 200px;
+  resize: none;
+  border: 0;
+  border-radius: 4px;
+}
+.contact__textarea:hover {
+  border: 1px solid midnightblue;
+  outline: none;
+  transition: var(--transition);
+}
+.contact__submit {
+  margin-top: 15px;
+  width: 50%;
+  padding: 12px;
+  background-color: cornsilk;
+  border: 2px solid bisque;
+  border-radius: 4px;
+}
+.contact__submit:hover, .contact__submit:focus {
+  border-color: midnightblue;
+  transition: var(--transition);
+}
+.contact__submit:active {
+  color: white;
+  background-color: midnightblue;
+  transition: var(--transition);
+}
+
+.footer {
+  width: 100%;
+  padding: 13px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__svg {
+  position: relative;
+  top: 2px;
+  margin-right: 8px;
+  width: 14px;
+  height: 12px;
+}
+
+/*# sourceMappingURL=main-index.min.css.map */

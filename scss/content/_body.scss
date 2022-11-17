@@ -1,0 +1,31 @@
+.logo {
+    font-size: 24px;
+}
+
+.main {
+    padding-left: 15px;
+    padding-right: 15px;
+    color:midnightblue ;
+    text-align: center;
+    background: linear-gradient(#99ccff -5%, #ccffcc 122%);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    &:hover {
+        color: royalblue;
+        transition: var(--transition);   
+    }
+}
+
+h2 {
+    font-size: 24px;
+    padding-top: 15px;
+
+}

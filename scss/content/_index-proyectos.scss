@@ -1,0 +1,26 @@
+.proyectos {
+    background-color: bisque;
+    padding-bottom: 15px;
+
+    &__btn {
+        margin-bottom: 13px;
+        padding: 24px;
+        width: calc(96%);
+        font-size: 24px;
+        color:midnightblue ;
+        background: cornsilk;
+        border-radius: 4px;
+        
+        &:hover,
+        &:focus {
+            border: 2px solid midnightblue;
+            transition: var(--transition);
+        }
+
+        &:active {
+            color: cornsilk;
+            background: midnightblue;
+            transition: var(--transition);
+        }
+    }
+}

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="pagina oficial de la asociación arewaje caminos de agua">
+    <meta name="keywords" content="asociación, arewaje, caminos de agua, procesos comunitarios">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santiago Quintero Pinto">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main-index.min.css">
+    <title>Arewaje</title>
+</head>
+
+    <body class="body">
+        <header class="header">
+                <a class="logo" href="./index.html">Logo</a>
+        
+                <button
+                  class="mobile__menubtn js-open-menu"
+                  aria-expanded="false"
+                  aria-controls="mobile"
+                >
+                <svg class="mobile__menusvg">
+                  <use href="./images/svgs.svg#menuphone"></use>
+                </svg>
+                </button>
+        
+                <!--
+                <div>
+                  <nav>
+                    <a href="./index.html">Inicio</a>
+                    <a href="">Quienes somos</a>
+                    <a href="">Proyectos</a>
+                    <a href="">Contactanos</a>
+                  </nav>
+        
+                  <div class="header__contacts">
+                    <a class="header__contacts--element" href="mailto:info@devstudio.com">
+                      <svg class="header__svgmail">
+                        <use href="./images/icons.svg#sobre"></use>
+                      </svg>
+                      arewajecaminosdeagua@gmail.com</a
+                    >
+                  </div>
+                </div>
+            -->
+        </header>
+
+        <main class="main">
+          <section class="intro" title="presentación">
+            <h1 class="intro__h1">Arewaje caminos de agua</h1>
+            <p class="intro__p">
+              Somos una asociación sin animo de lucro que busca promover, acompañar y apoyar procesos organizativos comunitarios por medio de proyectos que incentiven el cuidado de las relaciones bióticas, con los organismos vivos que influyen en la forma del ecosistema,  y/o apoyen proyectos productivos sustentables.
+            </p>
+          </section>
+
+          <section class="proyectos" title="proyectos">
+            <h2>Proyectos</h2>
+            <div class="proyectos__container">
+              <button class="proyectos__btn" type="button" onclick="">
+                2015
+              </button>
+              <button class="proyectos__btn" type="button" onclick="">
+                2016
+              </button>
+              <button class="proyectos__btn" type="button" onclick="">
+                2017
+              </button>
+            </div>
+          </section>
+
+          <section class="contact" title="contactanos">
+            <h2 class="contact__title">Contáctanos</h2>
+          <form class="contact__form" name="contactanos">
+            <p class="contact__p contact__p--name">Nombre</p>
+            <label>
+              <input
+                class="contact__input contact__input--name"
+                type="text"
+                name="nombre"
+                required
+              />
+            <p class="contact__p">E-mail</p>
+            <label>
+              <input
+                class="contact__input contact__input--email"
+                type="email"
+                name="email"
+                required
+              />
+            </label>
+            <p class="contact__p">Mensaje</p>
+            <label>
+              <textarea
+                class="contact__textarea"
+                name="comentarios"
+                placeholder="Introduzca el texto"
+              ></textarea>
+            </label>
+            <button class="contact__submit" type="submit">
+              Enviar
+            </button>
+          </form>
+        </section>
+        </main>
+
+        <footer class="footer">
+          <a class="logo">Logo</a>
+          <a class="logo__email" href="mailto:info@devstudio.com">
+            <svg class="footer__svg">
+              <use href="./images/svgs.svg#sobre"></use>
+            </svg>
+            arewajecaminosdeagua@gmail.com
+          </a>
+        </footer>
+
+        <div class="mobile__container js-menu-container" id="mobile">
+            <button class="mobile__btnclose js-close-menu">
+              <svg class="mobile__svgclose">
+                <use href="./images/svgs.svg#x"></use>
+              </svg>
+            </button>
+         
+            <div class="mobile__display">
+              <a class="mobile__link" href="./index.html">Inicio</a>
+              <a class="mobile__link" href="">Quienes somos</a>
+              <a class="mobile__link" href="">Proyectos</a>
+              <a class="mobile__link" href="">Contactanos</a>  
+                <a class="mobile__link mobile__email" href="mailto:info@devstudio.com">
+                  arewajecaminosdeagua@gmail.com
+                </a>
+            </div>
+          </div>
+      
+          <script
+            defer
+            src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+            integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+            crossorigin="anonymous"
+          ></script>
+          <script defer src="./js/mobile-menu.js"></script>
+
+    </body>
+</html>
