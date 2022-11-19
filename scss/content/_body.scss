@@ -1,13 +1,23 @@
-.logo {
-    font-size: 24px;
+.body {
+    min-width: 320px;
+    font-family: "Public Sans", sans-serif;
+    font-weight: 14px;
+    letter-spacing: .03em;
 }
 
 .main {
-    padding-left: 15px;
-    padding-right: 15px;
-    color:midnightblue ;
+    color:midnightblue;
     text-align: center;
     background: linear-gradient(#99ccff -5%, #ccffcc 122%);
+}
+
+.section {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.logo {
+    font-size: 24px;
 }
 
 button {
@@ -26,6 +36,16 @@ a {
 
 h2 {
     font-size: 24px;
-    padding-top: 15px;
 
+}
+
+@media screen and (min-width: 1200px) {
+    h2 {
+        margin-bottom: 50px;
+    }
+
+    .section {
+        padding-bottom: 50px;
+    }
+    
 }

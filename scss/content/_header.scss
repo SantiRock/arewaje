@@ -1,7 +1,71 @@
 .header {
-    padding: 12px 15px;
-    display: flex;
-    align-items: center;
     background-color: bisque;
+
+    &__container {
+        padding: 12px 15px;
+        display: flex;
+        align-items: center;
+    }
+
+    &__nav {
+        width: 100%;
+        margin-left: 7%;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    &__page {
+        margin-right: 30px;
+        font-size: 16px;
+        font-weight: 600;
+        &--select {
+            color: royalblue;
+        }
+    }
+
+    &__email {
+        display: flex;
+        align-items: center;
+        &:hover {
+            svg {
+                fill: royalblue;
+                transition: var(--transition);
+            }
+        }
+    }
+
+    &__gmail {
+        margin: 0;
+    }
+
+    &__svgmail {
+        margin-right: 5px;
+        width: 16px;
+        height: 12px;
+    }
+
 }
 
+@media screen and (max-width: 768px) {
+    .header__nav {
+        display: none;
+    }   
+}
+
+@media screen and (max-width: 950px) {
+    .header__gmail {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 1200px) {
+    .header__container {
+        margin-left: auto;
+        margin-right: auto;
+        padding: 12px 0;
+        max-width: 1200px;
+    }
+    
+}

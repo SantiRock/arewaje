@@ -1,6 +1,7 @@
 .proyectos {
+    padding-left: 15px;
+    padding-right: 15px;
     background-color: bisque;
-    padding-bottom: 15px;
 
     &__btn {
         margin-bottom: 13px;
@@ -21,6 +22,27 @@
             color: cornsilk;
             background: midnightblue;
             transition: var(--transition);
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .proyectos {
+
+        &__container {
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 15px;
+            padding-right: 15px;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            max-width: 1200px;
+        }
+
+        &__btn {
+            width: calc(32%);
+            height: 200px;
         }
     }
 }

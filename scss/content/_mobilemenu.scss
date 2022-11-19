@@ -42,7 +42,6 @@
         display: flex;
         flex-direction: column;
         width: 100vw;
-        max-width: 768px;
         height: 100vh;
         padding-left: 40px;
         padding-top: 8px;
@@ -56,19 +55,32 @@
     }
 
     &__display {
-        width: 280px;
         display: flex;
         flex-direction: column;
         font-size: 40px;
-       /* border: 1px solid red; */
     }
 
     &__link {
-        margin-bottom: 50px;
+        margin-bottom: 30px;
+        font-weight: 600;
 
     }
 
     &__email {
-        font-size: 30px;
+        margin-top: 30px;
+        font-size: 24px;
     }
+}
+
+@media screen and (min-width: 768px) {
+    .mobile__menubtn {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 475px) {
+    .mobile__email {
+        font-size: 14px;
+    }
+    
 }

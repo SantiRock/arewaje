@@ -2,16 +2,26 @@
   --transition: 250ms cubic-bezier(.4, 0, .2, 1);
 }
 
-.logo {
-  font-size: 24px;
+.body {
+  min-width: 320px;
+  font-family: "Public Sans", sans-serif;
+  font-weight: 14px;
+  letter-spacing: 0.03em;
 }
 
 .main {
-  padding-left: 15px;
-  padding-right: 15px;
   color: midnightblue;
   text-align: center;
   background: linear-gradient(#99ccff -5%, #ccffcc 122%);
+}
+
+.section {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.logo {
+  font-size: 24px;
 }
 
 button {
@@ -30,16 +40,74 @@ a:hover {
 
 h2 {
   font-size: 24px;
-  padding-top: 15px;
 }
 
+@media screen and (min-width: 1200px) {
+  h2 {
+    margin-bottom: 50px;
+  }
+  .section {
+    padding-bottom: 50px;
+  }
+}
 .header {
+  background-color: bisque;
+}
+.header__container {
   padding: 12px 15px;
   display: flex;
   align-items: center;
-  background-color: bisque;
+}
+.header__nav {
+  width: 100%;
+  margin-left: 7%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.header__page {
+  margin-right: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.header__page--select {
+  color: royalblue;
+}
+.header__email {
+  display: flex;
+  align-items: center;
+}
+.header__email:hover svg {
+  fill: royalblue;
+  transition: var(--transition);
+}
+.header__gmail {
+  margin: 0;
+}
+.header__svgmail {
+  margin-right: 5px;
+  width: 16px;
+  height: 12px;
 }
 
+@media screen and (max-width: 768px) {
+  .header__nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  .header__gmail {
+    display: none;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 12px 0;
+    max-width: 1200px;
+  }
+}
 .mobile__menubtn {
   margin-left: auto;
   padding: 0;
@@ -78,7 +146,6 @@ h2 {
   display: flex;
   flex-direction: column;
   width: 100vw;
-  max-width: 768px;
   height: 100vh;
   padding-left: 40px;
   padding-top: 8px;
@@ -91,36 +158,54 @@ h2 {
   transform: translateX(0);
 }
 .mobile__display {
-  width: 280px;
   display: flex;
   flex-direction: column;
   font-size: 40px;
-  /* border: 1px solid red; */
 }
 .mobile__link {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  font-weight: 600;
 }
 .mobile__email {
-  font-size: 30px;
+  margin-top: 30px;
+  font-size: 24px;
 }
 
+@media screen and (min-width: 768px) {
+  .mobile__menubtn {
+    display: none;
+  }
+}
+@media screen and (max-width: 475px) {
+  .mobile__email {
+    font-size: 14px;
+  }
+}
 .intro__h1 {
   margin-top: 0;
-  padding-top: 30px;
   font-size: 26px;
 }
 .intro__p {
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 0;
   padding-left: 4%;
   padding-right: 4%;
-  font-weight: 14px;
+  max-width: 1000px;
   line-height: 1.5;
-  letter-spacing: 0.03em;
   text-align: justify;
 }
 
+@media screen and (min-width: 1200px) {
+  .intro__h1 {
+    padding-top: 30px;
+    margin-bottom: 30px;
+  }
+}
 .proyectos {
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: bisque;
-  padding-bottom: 15px;
 }
 .proyectos__btn {
   margin-bottom: 13px;
@@ -141,12 +226,29 @@ h2 {
   transition: var(--transition);
 }
 
+@media screen and (min-width: 768px) {
+  .proyectos__container {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1200px;
+  }
+  .proyectos__btn {
+    width: 32%;
+    height: 200px;
+  }
+}
 .contact {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
   font-size: 20px;
-  padding-bottom: 30px;
-  /*&__form {
-      text-align: left;
-  }*/
+  max-width: 800px;
 }
 .contact__title {
   margin-bottom: 0;
@@ -203,6 +305,7 @@ h2 {
 }
 .contact__submit {
   margin-top: 15px;
+  margin-bottom: 15px;
   width: 50%;
   padding: 12px;
   background-color: cornsilk;
@@ -220,19 +323,36 @@ h2 {
 }
 
 .footer {
-  width: 100%;
+  background: #ddffdd;
+}
+.footer__container {
+  margin-left: auto;
+  margin-right: auto;
   padding: 13px;
+  width: 100%;
+  max-width: 1200px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .footer__svg {
   position: relative;
   top: 2px;
   margin-right: 8px;
   width: 14px;
   height: 12px;
+}
+
+@media screen and (max-width: 370px) {
+  .footer__email {
+    font-size: 12px;
+  }
+  .footer__svg {
+    top: 1px;
+    margin-right: 2px;
+    width: 10px;
+    height: 8px;
+  }
 }
 
 /*# sourceMappingURL=main-index.min.css.map */

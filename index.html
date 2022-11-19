@@ -20,6 +20,7 @@
 
     <body class="body">
         <header class="header">
+          <div class="header__container">
                 <a class="logo" href="./index.html">Logo</a>
         
                 <button
@@ -32,36 +33,32 @@
                 </svg>
                 </button>
         
-                <!--
-                <div>
+                <div class="header__nav">
                   <nav>
-                    <a href="./index.html">Inicio</a>
-                    <a href="">Quienes somos</a>
-                    <a href="">Proyectos</a>
-                    <a href="">Contactanos</a>
+                    <a class="header__page header__page--select" href="./index.html">Inicio</a>
+                    <a class="header__page" href="">Quienes somos</a>
+                    <a class="header__page" href="">Proyectos</a>
+                    <a class="header__page" href="">Contactanos</a>
                   </nav>
-        
-                  <div class="header__contacts">
-                    <a class="header__contactselement" href="mailto:info@devstudio.com">
-                      <svg class="header__svgmail">
-                        <use href="./images/icons.svg#sobre"></use>
-                      </svg>
-                      arewajecaminosdeagua@gmail.com</a
-                    >
-                  </div>
+                  <a class="header__email" href="mailto:arewajecaminosdeagua@gmail.com">
+                    <svg class="header__svgmail">
+                      <use href="./images/svgs.svg#sobre"></use>
+                    </svg>
+                    <p class="header__gmail">arewajecaminosdeagua@gmail.com</p>
+                  </a>
                 </div>
-            -->
+          </div>
         </header>
 
         <main class="main">
-          <section class="intro" title="presentación">
+          <section class="intro section" title="presentación">
             <h1 class="intro__h1">Arewaje caminos de agua</h1>
             <p class="intro__p">
               Somos una asociación sin animo de lucro que busca promover, acompañar y apoyar procesos organizativos comunitarios por medio de proyectos que incentiven el cuidado de las relaciones bióticas, con los organismos vivos que influyen en la forma del ecosistema,  y/o apoyen proyectos productivos sustentables.
             </p>
           </section>
 
-          <section class="proyectos" title="proyectos">
+          <section class="proyectos section" title="proyectos">
             <h2>Proyectos</h2>
             <div class="proyectos__container">
               <button class="proyectos__btn" type="button" onclick="">
@@ -76,7 +73,7 @@
             </div>
           </section>
 
-          <section class="contact" title="contactanos">
+          <section class="contact section" title="contactanos">
             <h2 class="contact__title">Contáctanos</h2>
           <form class="contact__form" name="contactanos">
             <p class="contact__p contact__p--name">Nombre</p>
@@ -113,13 +110,16 @@
         </main>
 
         <footer class="footer">
+          <div class="footer__container">
           <a class="logo">Logo</a>
-          <a class="logo__email" href="mailto:info@devstudio.com">
+          <a class="footer__email" href="mailto:arewajecaminosdeagua@gmail.com">
             <svg class="footer__svg">
               <use href="./images/svgs.svg#sobre"></use>
             </svg>
             arewajecaminosdeagua@gmail.com
           </a>
+          </div>
+        </div>
         </footer>
 
         <div class="mobile__container js-menu-container" id="mobile">
@@ -134,10 +134,9 @@
               <a class="mobile__link" href="">Quienes somos</a>
               <a class="mobile__link" href="">Proyectos</a>
               <a class="mobile__link" href="">Contactanos</a>  
-                <a class="mobile__link mobile__email" href="mailto:info@devstudio.com">
+              <a class="mobile__email" href="mailto:arewajecaminosdeagua@gmail.com">
                   arewajecaminosdeagua@gmail.com
                 </a>
-            </div>
           </div>
       
           <script
