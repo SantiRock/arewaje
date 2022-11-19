@@ -75,36 +75,46 @@
 
           <section class="contact section" title="contactanos">
             <h2 class="contact__title">Contáctanos</h2>
-          <form class="contact__form" name="contactanos">
+          <form class="contact__form" method="POST" action="contactanos.php" id="contactanos" name="contactanos">
             <p class="contact__p contact__p--name">Nombre</p>
-            <label>
+            <label for="nombre">
               <input
                 class="contact__input contact__input--name"
                 type="text"
                 name="nombre"
+                id="nombre"
                 required
               />
             </label>
             <p class="contact__p">E-mail</p>
-            <label>
+            <label for="email">
               <input
                 class="contact__input contact__input--email"
                 type="email"
                 name="email"
+                id="email"
                 required
               />
             </label>
+            <p class="contact__p">Asunto</p>
+            <label for="asunto">
+              <input
+                class="contact__input contact__input--subject"
+                type="text"
+                name="asunto"
+                id="asunto"
+                required
+              />
             <p class="contact__p">Mensaje</p>
-            <label>
+            <label for="mensaje">
               <textarea
                 class="contact__textarea"
-                name="comentarios"
+                name="mensaje"
                 placeholder="Introduzca el texto"
+                id="mensaje"
               ></textarea>
             </label>
-            <button class="contact__submit" type="submit">
-              Enviar
-            </button>
+            <input class="contact__submit" type="submit" value="Enviar">
           </form>
         </section>
         </main>
@@ -133,7 +143,7 @@
               <a class="mobile__link" href="./index.html">Inicio</a>
               <a class="mobile__link" href="">Quienes somos</a>
               <a class="mobile__link" href="">Proyectos</a>
-              <a class="mobile__link" href="">Contactanos</a>  
+              <a class="mobile__link" href="">Contáctanos</a>  
               <a class="mobile__email" href="mailto:arewajecaminosdeagua@gmail.com">
                   arewajecaminosdeagua@gmail.com
                 </a>

@@ -169,16 +169,12 @@ h2 {
 .mobile__email {
   margin-top: 30px;
   font-size: 24px;
+  word-break: break-word;
 }
 
 @media screen and (min-width: 768px) {
   .mobile__menubtn {
     display: none;
-  }
-}
-@media screen and (max-width: 475px) {
-  .mobile__email {
-    font-size: 14px;
   }
 }
 .intro__h1 {
@@ -289,6 +285,14 @@ h2 {
 }
 .contact__input--email:hover, .contact__input--email:focus {
   background-image: url("../images/email1.svg");
+}
+.contact__input--subject {
+  background-image: url("../images/subject.svg");
+  background-repeat: no-repeat;
+  background-position: 14px 12px;
+}
+.contact__input--subject:hover, .contact__input--subject:focus {
+  background-image: url("../images/subject1.svg");
 }
 .contact__textarea {
   padding: 12px 16px;

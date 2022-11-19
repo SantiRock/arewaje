@@ -50,6 +50,15 @@
                 background-image: url("../images/email1.svg");
             }
         }
+        &--subject {
+            background-image: url("../images/subject.svg");
+            background-repeat: no-repeat;
+            background-position: 14px 12px;
+            &:hover,
+            &:focus {
+                background-image: url("../images/subject1.svg");
+            }
+        }
     }
 
     &__textarea {
