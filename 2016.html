@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="pagina oficial de la asociación arewaje caminos de agua">
+    <meta name="keywords" content="asociación, arewaje, caminos de agua, procesos comunitarios">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Santiago Quintero Pinto">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.0.0/modern-normalize.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" 
+        rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title>Arewaje</title>
+</head>
+
+    <body class="body">
+        <header class="header">
+          <div class="header__container">
+                <a class="logo" href="./index.html">Logo</a>
+        
+                <button
+                  class="mobile__menubtn js-open-menu"
+                  aria-expanded="false"
+                  aria-controls="mobile"
+                >
+                <svg class="mobile__menusvg">
+                  <use href="./images/svgs.svg#menuphone"></use>
+                </svg>
+                </button>
+        
+                <div class="header__nav">
+                  <nav>
+                    <a class="header__page" href="./index.html">Inicio</a>
+                    <a class="header__page" href="./about.html">Quienes somos</a>
+                    <a class="header__page header__page--select" href="">Proyectos</a>
+                    <a class="header__page" href="">Contactanos</a>
+                  </nav>
+                  <a class="header__email" href="mailto:arewajecaminosdeagua@gmail.com">
+                    <svg class="header__svgmail">
+                      <use href="./images/svgs.svg#sobre"></use>
+                    </svg>
+                    <p class="header__gmail">arewajecaminosdeagua@gmail.com</p>
+                  </a>
+                </div>
+          </div>
+        </header>
+
+        <main>
+
+        </main>
+        <footer class="footer">
+            <div class="footer__container">
+            <a class="logo">Logo</a>
+            <a class="footer__email" href="mailto:arewajecaminosdeagua@gmail.com">
+              <svg class="footer__svg">
+                <use href="./images/svgs.svg#sobre"></use>
+              </svg>
+              arewajecaminosdeagua@gmail.com
+            </a>
+            </div>
+          </div>
+          </footer>
+  
+          <div class="mobile__container js-menu-container" id="mobile">
+              <button class="mobile__btnclose js-close-menu">
+                <svg class="mobile__svgclose">
+                  <use href="./images/svgs.svg#x"></use>
+                </svg>
+              </button>
+           
+              <div class="mobile__display">
+                <a class="mobile__link" href="./index.html">Inicio</a>
+                <a class="mobile__link" href="./about.html">Quienes somos</a>
+                <a class="mobile__link" href="">Proyectos</a>
+                <a class="mobile__link" href="">Contáctanos</a>  
+                <a class="mobile__email" href="mailto:arewajecaminosdeagua@gmail.com">
+                    arewajecaminosdeagua@gmail.com
+                  </a>
+            </div>
+        
+            <script
+              defer
+              src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+              integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+              crossorigin="anonymous"
+            ></script>
+            <script defer src="./js/mobile-menu.js"></script>
+    
+    </body>
+</html>

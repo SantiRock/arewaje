@@ -14,7 +14,7 @@
     <link 
         href="https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&display=swap" 
         rel="stylesheet">
-    <link rel="stylesheet" href="./css/main-index.min.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <title>Arewaje</title>
 </head>
 
@@ -36,9 +36,9 @@
                 <div class="header__nav">
                   <nav>
                     <a class="header__page header__page--select" href="./index.html">Inicio</a>
-                    <a class="header__page" href="">Quienes somos</a>
-                    <a class="header__page" href="">Proyectos</a>
-                    <a class="header__page" href="">Contactanos</a>
+                    <a class="header__page" href="./about.html">Quienes somos</a>
+                    <a class="header__page" href="#proyectos">Proyectos</a>
+                    <a class="header__page" href="#contactanos">Contactanos</a>
                   </nav>
                   <a class="header__email" href="mailto:arewajecaminosdeagua@gmail.com">
                     <svg class="header__svgmail">
@@ -58,22 +58,28 @@
             </p>
           </section>
 
-          <section class="proyectos section" title="proyectos">
+          <section class="proyectos section" title="proyectos" id="proyectos">
             <h2>Proyectos</h2>
             <div class="proyectos__container">
-              <button class="proyectos__btn" type="button" onclick="">
+              <div class="proyectos__link">
+              <a href="./2015.html">
                 2015
-              </button>
-              <button class="proyectos__btn" type="button" onclick="">
+              </a>
+            </div>
+            <div class="proyectos__link">
+              <a href="./2016.html">
                 2016
-              </button>
-              <button class="proyectos__btn" type="button" onclick="">
+              </a>
+            </div>
+            <div class="proyectos__link">
+              <a href="./2017.html">
                 2017
-              </button>
+              </a>
+            </div>
             </div>
           </section>
 
-          <section class="contact section" title="contactanos">
+          <section class="contact section" title="contactanos" id="contactanos">
             <h2 class="contact__title">Contáctanos</h2>
           <form class="contact__form" method="POST" id="contactanos" name="contactanos">
             <p class="contact__p contact__p--name">Nombre</p>
@@ -141,7 +147,7 @@
          
             <div class="mobile__display">
               <a class="mobile__link" href="./index.html">Inicio</a>
-              <a class="mobile__link" href="">Quienes somos</a>
+              <a class="mobile__link" href="./about.html">Quienes somos</a>
               <a class="mobile__link" href="">Proyectos</a>
               <a class="mobile__link" href="">Contáctanos</a>  
               <a class="mobile__email" href="mailto:arewajecaminosdeagua@gmail.com">

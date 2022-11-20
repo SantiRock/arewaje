@@ -3,10 +3,10 @@
     padding-right: 15px;
     background-color: bisque;
 
-    &__btn {
+    &__link {
         margin-bottom: 13px;
         padding: 24px;
-        width: calc(96%);
+        width: 96%;
         font-size: 24px;
         color:midnightblue ;
         background: cornsilk;
@@ -40,9 +40,9 @@
             max-width: 1200px;
         }
 
-        &__btn {
+        &__link {
             width: calc(32%);
-            height: 200px;
+            padding: 70px;
         }
     }
 }

@@ -203,7 +203,7 @@ h2 {
   padding-right: 15px;
   background-color: bisque;
 }
-.proyectos__btn {
+.proyectos__link {
   margin-bottom: 13px;
   padding: 24px;
   width: 96%;
@@ -212,11 +212,11 @@ h2 {
   background: cornsilk;
   border-radius: 4px;
 }
-.proyectos__btn:hover, .proyectos__btn:focus {
+.proyectos__link:hover, .proyectos__link:focus {
   border: 2px solid midnightblue;
   transition: var(--transition);
 }
-.proyectos__btn:active {
+.proyectos__link:active {
   color: cornsilk;
   background: midnightblue;
   transition: var(--transition);
@@ -233,9 +233,9 @@ h2 {
     flex-wrap: wrap;
     max-width: 1200px;
   }
-  .proyectos__btn {
+  .proyectos__link {
     width: 32%;
-    height: 200px;
+    padding: 70px;
   }
 }
 .contact {
@@ -359,4 +359,4 @@ h2 {
   }
 }
 
-/*# sourceMappingURL=main-index.min.css.map */
+/*# sourceMappingURL=main.min.css.map */
