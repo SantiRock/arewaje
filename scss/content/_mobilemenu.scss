@@ -1,3 +1,5 @@
+@use "../utils/variables";
+
 .mobile {
     &__menubtn {
         margin-left: auto;
@@ -5,7 +7,7 @@
         width: 30px;
         height: 30px;
         background-color: transparent;
-        fill: black;
+        fill: midnightblue;
         &:hover,
         &:focus .menu__svg {
                 fill: royalblue;
@@ -19,7 +21,7 @@
     }
 
     &__btnclose {
-        margin-left: calc(100% - 48px);
+        margin-left: calc(100% - 20px);
         width: 30px;
         height: 30px;
         background-color: transparent;
@@ -38,14 +40,15 @@
     &__container {
         position: fixed;
         top: 0;
-        left: 0;
+        right: 0;
         display: flex;
         flex-direction: column;
-        width: 100vw;
+        width: 300px;
         height: 100vh;
-        padding-left: 40px;
-        padding-top: 8px;
-        background: bisque;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 20px;
+        background: rgb(202, 242, 196);
         z-index: 999;
         transform: translateX(100%);
         transition: transform 250ms ease-in-out;
@@ -57,7 +60,7 @@
     &__display {
         display: flex;
         flex-direction: column;
-        font-size: 40px;
+        font-size: 30px;
     }
 
     &__link {
@@ -68,7 +71,7 @@
 
     &__email {
         margin-top: 30px;
-        font-size: 24px;
+        font-size: 20px;
         word-break: break-word;
     }
 }

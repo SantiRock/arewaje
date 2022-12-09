@@ -1,5 +1,8 @@
+@use "../utils/variables";
+
+
 .header {
-    background-color: bisque;
+    background-color: transparent;
 
     &__container {
         padding: 12px 15px;
@@ -27,6 +30,7 @@
     &__email {
         display: flex;
         align-items: center;
+        color: $colore;
         &:hover {
             svg {
                 fill: royalblue;
@@ -37,15 +41,18 @@
 
     &__gmail {
         margin: 0;
+        letter-spacing: 0.03em;
     }
 
     &__svgmail {
         margin-right: 5px;
         width: 16px;
         height: 12px;
+        fill: $colore;
     }
 
 }
+
 
 @media screen and (max-width: 768px) {
     .header__nav {

@@ -1,0 +1,29 @@
+@use "../utils/variables";
+
+.team {
+    &__titulo {
+        font-size: 20px;
+        letter-spacing: 0.17em;
+        color: $colore;
+    }
+
+    &__container {
+        height: 200px;
+    }
+
+}
+
+@media screen and (min-width: 440px) {
+    .team__titulo {
+        font-size: 39px;
+    }
+}
+
+@media screen and (min-width: 749px) {
+    .team {
+        
+        &__titulo {
+            font-size: 43px;
+        }
+    }
+}

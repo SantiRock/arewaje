@@ -37,8 +37,8 @@
                   <nav>
                     <a class="header__page header__page--select" href="./index.html">Inicio</a>
                     <a class="header__page" href="./about.html">Quienes somos</a>
-                    <a class="header__page" href="./proyectos.html">Proyectos</a>
-                    <a class="header__page" href="./contacto">Contactanos</a>
+                    <a class="header__page" href="#proyectos">Proyectos</a>
+                    <a class="header__page" href="#contactanos">Contactanos</a>
                   </nav>
                   <a class="header__email" href="mailto:arewajecaminosdeagua@gmail.com">
                     <svg class="header__svgmail">
@@ -51,48 +51,83 @@
         </header>
 
         <main class="main">
-          <section class="intro section" title="presentación" id="about">
+          <section class="intro section" title="presentación">
             <h1 class="intro__h1">Arewaje caminos de agua</h1>
             <p class="intro__p">
               Somos una asociación sin animo de lucro que busca promover, acompañar y apoyar procesos organizativos comunitarios por medio de proyectos que incentiven el cuidado de las relaciones bióticas, con los organismos vivos que influyen en la forma del ecosistema,  y/o apoyen proyectos productivos sustentables.
             </p>
-            <div class="intro__more">
-              <a class="intro__a" href="./about.html">Saber más ...</a>
+          </section>
+
+          <section class="proyectos section" title="proyectos" id="proyectos">
+            <h2>Proyectos</h2>
+            <div class="proyectos__container">
+              <div class="proyectos__link">
+              <a href="./2015.html">
+                2015
+              </a>
+            </div>
+            <div class="proyectos__link">
+              <a href="./2016.html">
+                2016
+              </a>
+            </div>
+            <div class="proyectos__link">
+              <a href="./2017.html">
+                2017
+              </a>
+            </div>
             </div>
           </section>
 
-          <div class="animation"></div>
-
-          <section class="iproyectos section" title="proyectos" id="proyectos">
-            <h2 class="iproyectos__titulo">Proyectos</h2>
-            <div class="iproyectos__container">
-              <div class="iproyectos__item">
-                <a class="iproyectos__link" href="./2015.html">
-                  2015
-                </a>
-              </div>
-              <div class="iproyectos__item">
-                <a class="iproyectos__link" href="./2016.html">
-                  2016
-                </a>
-              </div>
-              <div class="iproyectos__item">
-                <a class="iproyectos__link" href="./2017.html">
-                  2017
-                </a>
-              </div>
-            </div>
-          </section>
-
-          <section class="team section" title="equipo">
-            <h2 class="team__titulo">Equipo</h2>
-            <div class="team__container"></div>
-          </section>
+          <section class="contact section" title="contactanos" id="contactanos">
+            <h2 class="contact__title">Contáctanos</h2>
+          <form class="contact__form" method="POST" id="contactanos" name="contactanos">
+            <p class="contact__p contact__p--name">Nombre</p>
+            <label for="nombre">
+              <input
+                class="contact__input contact__input--name"
+                type="text"
+                name="nombre"
+                id="nombre"
+                required
+              />
+            </label>
+            <p class="contact__p">E-mail</p>
+            <label for="email">
+              <input
+                class="contact__input contact__input--email"
+                type="email"
+                name="email"
+                id="email"
+                required
+              />
+            </label>
+            <p class="contact__p">Asunto</p>
+            <label for="asunto">
+              <input
+                class="contact__input contact__input--subject"
+                type="text"
+                name="asunto"
+                id="asunto"
+                required
+              />
+            <p class="contact__p">Mensaje</p>
+            <label for="mensaje">
+              <textarea
+                class="contact__textarea"
+                name="mensaje"
+                placeholder="Introduzca el texto"
+                id="mensaje"
+              ></textarea>
+            </label>
+            <input class="contact__submit" type="submit" value="Enviar">
+          </form>
+        </section>
         </main>
 
         <footer class="footer">
           <div class="footer__container">
-          <a class="logo footer__logo">Logo</a>
+          <a class="logo">Logo</a>
           <a class="footer__email" href="mailto:arewajecaminosdeagua@gmail.com">
             <svg class="footer__svg">
               <use href="./images/svgs.svg#sobre"></use>
@@ -113,7 +148,7 @@
             <div class="mobile__display">
               <a class="mobile__link" href="./index.html">Inicio</a>
               <a class="mobile__link" href="./about.html">Quienes somos</a>
-              <a class="mobile__link" href="./proyectos.html">Proyectos</a>
+              <a class="mobile__link" href="">Proyectos</a>
               <a class="mobile__link" href="">Contáctanos</a>  
               <a class="mobile__email" href="mailto:arewajecaminosdeagua@gmail.com">
                   arewajecaminosdeagua@gmail.com
